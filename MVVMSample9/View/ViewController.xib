@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="MVVMSample9" customModuleProvider="target">
+            <connections>
+                <outlet property="idTextField" destination="N6U-sk-ECg" id="kOD-GF-IlF"/>
+                <outlet property="passwordTextField" destination="wDw-aT-lDS" id="TrE-da-O3h"/>
+                <outlet property="validationLabel" destination="w7M-zW-36b" id="ixe-lg-oPQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="61d-jP-MaJ">
+                    <rect key="frame" x="50" y="109" width="293" height="158"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N6U-sk-ECg">
+                            <rect key="frame" x="0.0" y="0.0" width="293" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wDw-aT-lDS">
+                            <rect key="frame" x="0.0" y="70" width="293" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDとパスワードを入力してください。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7M-zW-36b">
+                            <rect key="frame" x="0.0" y="140" width="293" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="w7M-zW-36b" firstAttribute="leading" secondItem="61d-jP-MaJ" secondAttribute="leading" id="CBh-pz-ZtM"/>
+                        <constraint firstItem="wDw-aT-lDS" firstAttribute="leading" secondItem="61d-jP-MaJ" secondAttribute="leading" id="Szv-UM-Ujf"/>
+                        <constraint firstAttribute="trailing" secondItem="wDw-aT-lDS" secondAttribute="trailing" id="ULu-Bi-BCa"/>
+                        <constraint firstItem="N6U-sk-ECg" firstAttribute="leading" secondItem="61d-jP-MaJ" secondAttribute="leading" id="gKa-Ax-B40"/>
+                        <constraint firstAttribute="trailing" secondItem="w7M-zW-36b" secondAttribute="trailing" id="guC-E3-XA2"/>
+                        <constraint firstAttribute="bottom" secondItem="w7M-zW-36b" secondAttribute="bottom" id="o5l-Xb-ogM"/>
+                        <constraint firstItem="N6U-sk-ECg" firstAttribute="top" secondItem="61d-jP-MaJ" secondAttribute="top" id="rId-5T-bY1"/>
+                        <constraint firstAttribute="trailing" secondItem="N6U-sk-ECg" secondAttribute="trailing" id="xz2-Vf-W0g"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="61d-jP-MaJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="Vcj-NM-ZNj"/>
+                <constraint firstItem="61d-jP-MaJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="We6-zI-05H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="61d-jP-MaJ" secondAttribute="trailing" constant="50" id="s79-s8-FCk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-15" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
